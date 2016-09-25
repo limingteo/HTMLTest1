@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-famiy: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, .btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+
+.btn {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #1bbc9b;
+  padding: 15px 30px;
+  /*padding for top and bottom, left and right*/
+  /*if 4 numbers mean padding for top, right, bottom, left*/
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 30px;
+}
+
+/*navigation styling*/
+nav {
+  background:black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+nav ul {
+  padding: 0;
+  float: right;
+  margin-top: 40px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*header styling*/
+header {
+  background: black url(../images/header-bg.jpg) center no-repeat;
+  color: white;
+  text-align: center;
+  height: 600px;
+  padding-top: 150px;
+}
+
+header h2 {
+  margin-bottom: 30px;
+}
+
+/*features styling*/
+.features {
+  text-align: center;
+}
+
+.features article {
+  width: 24%;
+  display: inline-block;
+}
+
+.features article .btn {
+  color: #1bbc9b;
+  background: white;
+  border: 1pt solid #1bbc9b;
+}
+
+.mockup {
+  background: black url(../images/mockup-bg.jpg) center
+  no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  height: 600px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.clients {
+  text-align:center;
+  background: #1bbc9b;
+  color: #fff
+}
+
+.clients ul li {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.clients ul li img {
+  max-width: 150px;
+}
+
+.clients .btn {
+  border: 1px solid white;
+  transition: all .2s ease;
+}
+
+.clients .btn:hover {
+  background: white;
+  color: #1bbc9b;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  height: 300px;
+  padding-top: 30px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-top: 30px
+  padding: 0;
+}
+
+footer ul li img {
+  max-width: 30px;
+  transition: all .2s ease;
+}
+
+footer ul li img:hover {
+  opacity: 0.5;
+}
+
+/*media queries*/
+@@media (max-width: 768px) {
+  nav { text-align: center;
+  padding: 20px, 0;}
+  nav ul {
+    float: none;
+  }
+
+  .features article {
+    width: 100%;
+    display: block;
+  }
+
+  .mockup img {
+    max-width: 100%;
+  }
+
+}
